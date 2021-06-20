@@ -1,0 +1,38 @@
+/** Media Queries **/
+// @mixin telefonoSmall {
+//   @media screen and (min-width: $telefonoSmall) {
+//     @content;
+//   }
+// }
+
+// @mixin telefono {
+//   @media screen and (min-width: $telefono) {
+//     @content;
+//   }
+// }
+
+@mixin tablet {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+// @mixin desktopSmall {
+//   @media screen and (min-width: $desktopSmall) and (max-width: 1199px) {
+//     @content;
+//   }
+// }
+
+@mixin desktop {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin grid($columnas, $espaciado) {
+  display: grid;
+  gap: $espaciado;
+  grid-template-columns: repeat($columnas, 1fr);
+  justify-content: center;
+  align-items: center;
+}
