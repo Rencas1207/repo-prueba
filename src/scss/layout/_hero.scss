@@ -217,9 +217,7 @@
       color: #637b9d;
     }
   }
-}
-
-button {
+  button {
   cursor: pointer;
   background-color: #df284a;
   border: none;
@@ -243,6 +241,7 @@ button {
   @include desktop {
     width: 33%;
   }
+}
 }
 
 .hero-form-terminos {
