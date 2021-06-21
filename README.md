@@ -10,7 +10,7 @@
 * GIT Y GITHUB PARA EL DEPLOY
 
 ## Link del deploy
-Prueba Frontend - [Maquetación Platzi](https://pages.github.com/)
+Prueba Frontend - [Maquetación Platzi](https://rencas1207.github.io/repo-prueba/)
 
 
 
