@@ -95,7 +95,7 @@ function iniciarApp() {
 
 function formulario(e) {
   e.preventDefault();
-  location.href = "formulario.html";
+  location.href = "../../formulario.html";
 }
 
 function paginaSiguiente() {
