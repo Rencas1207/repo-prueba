@@ -1,3 +1,4 @@
+const form = document.querySelector("#form-next");
 const form2 = document.querySelector("#form-register");
 
 const btnSiguiente = document.querySelector("#siguiente");
@@ -27,6 +28,10 @@ eventListeners();
 
 function eventListeners() {
   document.addEventListener("DOMContentLoaded", iniciarApp);
+
+  if (form) {
+    form.addEventListener("submit", formulario);
+  }
 
   if (input1) {
     input1.addEventListener("change", validarCheckbox);
@@ -86,6 +91,11 @@ function eventListeners() {
 function iniciarApp() {
   btnSiguiente.disabled = true;
   btnSiguiente.classList.remove("active");
+}
+
+function formulario(e) {
+  e.preventDefault();
+  location.href = "../formulario.html";
 }
 
 function paginaSiguiente() {
