@@ -217,32 +217,36 @@
       color: #637b9d;
     }
   }
+  .form-btn {
+    cursor: pointer;
+    background-color: #df284a;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 1.5rem 0rem;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &:hover {
+      background: #e45b74;
+    }
+    @include tablet {
+      margin-left: 1rem;
+      font-size: 1.6rem;
+      width: 25%;
+    }
+    @include desktop {
+      width: 33%;
+    }
+  }
 }
 
-button {
-  cursor: pointer;
-  background-color: #df284a;
-  border: none;
-  border-radius: 8px;
-  color: #fff;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  padding: 1.5rem 0rem;
-  text-transform: uppercase;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  &:hover {
-    background: #e45b74;
-  }
-  @include tablet {
-    margin-left: 1rem;
-    font-size: 1.6rem;
-    width: 25%;
-  }
-  @include desktop {
-    width: 33%;
-  }
+.form-btn {
+  border: 2px solid red;
+  padding: 0.2rem;
 }
 
 .hero-form-terminos {
