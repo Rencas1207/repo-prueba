@@ -40,13 +40,13 @@
   grid-template-columns: 1fr;
   margin: 0 auto;
   max-width: 1230px;
-  background-image: linear-gradient(180deg, transparent, #121f3d 50%);
+  background-image: linear-gradient(180deg, transparent, #001c59 50%);
   padding: 25rem 1rem 1rem 1rem;
   position: relative;
   width: 100%;
 
   @include tablet {
-    background-image: linear-gradient(180deg, transparent, #121f3d 45%);
+    background-image: linear-gradient(180deg, transparent, #001c59 45%);
     grid-template-columns: 1fr 7fr;
     padding-top: 25rem;
   }
@@ -84,7 +84,7 @@
 
 .hero-content {
   @include desktop {
-    background-image: linear-gradient(270deg, transparent, #121f3d 13%);
+    background-image: linear-gradient(270deg, transparent, #001c59 13%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -143,7 +143,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.02rem double #d3d3d3;
+  border: 1px solid #becde3;
   border-radius: 1rem;
   padding: 0.8rem 1rem;
   margin: 0 0rem 0 1rem;
@@ -167,6 +167,8 @@
   color: $text-color;
   p {
     color: #becde3;
+    // color: #000;
+
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 8px;
@@ -197,43 +199,49 @@
     }
     input {
       background: $blueDark-color;
-      border: 1px solid #637b9d;
+      // background: #084ad8;
+      background: #011133;
+      border: 1px solid #df284a;
       border-radius: 8px;
       color: #fff;
       padding: 1.5rem 1rem;
       width: 100%;
       outline: none;
       &:focus {
-        border: 1px thin #33b1ff;
-        box-shadow: 0px 0px 15px 0px rgba(81, 142, 225, 0.75);
+        border: 1px solid #df284a;
+        // box-shadow: 0px 0px 15px 0px rgba(81, 142, 225, 0.75);
+        box-shadow: 0px 0px 15px 0px rgba(223, 40, 74, 0.75);
       }
     }
+    &::placeholder {
+      color: #637b9d;
+    }
   }
+}
 
-  button {
-    cursor: pointer;
-    background-color: #98ca3f;
-    border: none;
-    border-radius: 8px;
-    color: #03091e;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    padding: 1.5rem 0rem;
-    text-transform: uppercase;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    &:hover {
-      background: #c1df8b;
-    }
-    @include tablet {
-      margin-left: 1rem;
-      font-size: 1.6rem;
-      width: 25%;
-    }
-    @include desktop {
-      width: 33%;
-    }
+button {
+  cursor: pointer;
+  background-color: #df284a;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 1.5rem 0rem;
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  &:hover {
+    background: #e45b74;
+  }
+  @include tablet {
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    width: 25%;
+  }
+  @include desktop {
+    width: 33%;
   }
 }
 
@@ -253,7 +261,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    background-image: linear-gradient(90deg, transparent, #121f3d);
+    background-image: linear-gradient(90deg, transparent, #001c59);
     padding: 0 5rem 14rem 0rem;
   }
   .hero-teacher-enlace {
