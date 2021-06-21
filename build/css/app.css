@@ -932,7 +932,13 @@ input {
 .form-register-2 {
   margin: 1rem auto 2rem auto;
   color: #eff3f8;
-  width: 780px; }
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .form-register-2 {
+      width: 80%; } }
+  @media screen and (min-width: 1024px) {
+    .form-register-2 {
+      width: 60%; } }
   .form-register-2 .form-register-container {
     margin-top: 2rem;
     height: auto; }
@@ -951,9 +957,18 @@ input {
   margin-top: 2rem; }
 
 .form-register-btn-radios-2 {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 10% 10% 10%;
+  gap: 1rem 8rem;
   margin-top: 1rem; }
+  @media screen and (min-width: 768px) {
+    .form-register-btn-radios-2 {
+      grid-template-columns: 12% 12% 12% 12%;
+      gap: 1rem 5rem; } }
+  @media screen and (min-width: 1024px) {
+    .form-register-btn-radios-2 {
+      grid-template-columns: 15% 15% 15% 15% 15%;
+      gap: 0 1rem; } }
 
 .form-btn-radio-2 {
   color: #eff3f8;
@@ -963,10 +978,7 @@ input {
   border: 1px solid #637b9d;
   width: 10rem;
   height: 4.5rem;
-  margin-left: 2rem;
   cursor: pointer; }
-  .form-btn-radio-2:nth-child(1) {
-    margin-left: 0rem; }
   .form-btn-radio-2:hover {
     border: 1.5px solid #33b1ff;
     background: #df284a; }
@@ -988,7 +1000,8 @@ input {
 
 .form-inputs-checkbox {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  flex-wrap: wrap; }
 
 .form-checkbox {
   border: 1.5px solid #637b9d;
